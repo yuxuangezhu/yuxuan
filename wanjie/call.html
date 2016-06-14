@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>产品介绍－上海万介智能科技有限公司</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+<body>
+<!-- 导航开始 -->
+<nav class="navbar navbar-inverse">
+	<a class="navbar-brand wanjie_logo" href="./index.html"></a>
+	<span class="glyphicon glyphicon-align-justify wanjie_button" aria-hidden="true"></span>
+    <ul class="nav nav-pills" id="wanjie_title">
+		<li><a href="./index.html">首页</a></li>
+		<li><a href="./about.html">关于</a></li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="./product.html">产品<span class="caret"></span></a>
+			<ul class="dropdown-menu wanjie_dr">
+				<li><a href="./product.html">SL1500</a></li>
+				<li><a href="./product_750.html">SL750</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="./program.html">应用方案<span class="caret"></span></a>
+			<ul class="dropdown-menu wanjie_dr">
+				<li><a href="./program.html?#anli">应用案例</a></li>
+				<li><a href="./program.html?1#fanwei">应用范围</a></li>
+				<li><a href="./program.html?2#hid">HID V.S. LED</a></li>
+			</ul>
+		</li>
+		<li><a href="./call.html">联系我们</a></li>
+    </ul>
+</nav>
+<!-- 导航结束 -->
+<div class="call_content">
+	<div class="call_content_inner">
+		<p>电话：+86 21 3319 7978</p>
+		<p>地址：新骏环路188号15幢4楼 中国上海 201114</p>
+		<p>4th floor Building 15, No.188 Xin Jun Ring Rd, China 201114</p>
+		<p style="margin-top: 30px;">销售邮箱：sales@wanjie-i.com</p>
+		<p>咨询邮箱：info@wanjie-i.com</p>
+		<img class="call_img" src="./images/call_01.png">
+	</div>
+</div>
+<!-- 页尾开始 -->
+<div class="wanjie_footer pro_footer">
+	<div class="wanjie_footer_inner">
+		<p><span>电话：+86 21 3319 7978</span><span>地址：新骏环路188号15幢4楼 中国上海 201114</span></p>
+		<p><span>Copyright © 2016</span><span>上海万介智能科技有限公司 版权所有</span></p>
+	</div>
+</div>
+<!-- 页尾结束 -->
+<script type="text/javascript">
+$(document).ready(function() {
+	reSize();
+	var lock = 1;
+	$('.wanjie_button').on('click', function() {
+		if (lock == 0) {
+			$('#wanjie_title_m').css('display', 'none');
+			lock = 1;
+		} else {
+			$('#wanjie_title_m').css('display', 'block');
+			lock = 0;
+		}
+	});
+	$('.call_content').on('click',function() {
+		$('#wanjie_title_m').css('display', 'none');
+		lock = 1;
+	})
+	$('#wanjie_title a').on('mouseover', function() {
+		$(this).css('border-bottom', '1px solid #2F7096');
+	})
+	$('#wanjie_title a').on('mouseout', function() {
+		$(this).css('border-bottom', '');
+	})
+	$('.wanjie_img').on('mouseover', function() {
+		$(this).find('span').css('margin-top', '-38px')
+	})
+	$('.wanjie_img').on('mouseout', function() {
+		$(this).find('span').css('margin-top', '0px')
+	})
+	$(window).on('resize', function() {
+		reSize();
+	})
+	function reSize() {
+		var size = $(window).width();
+		console.log(size)
+		if (size <= 767) {
+			$('#wanjie_title').attr('id', 'wanjie_title_m');
+			$('.wanjie_button').css('display', 'block');
+		} else {
+			$('#wanjie_title_m').attr('id', 'wanjie_title');
+			$('.wanjie_button').css('display', 'none');
+		}
+	}
+})
+</script>
+</body>
+</html>

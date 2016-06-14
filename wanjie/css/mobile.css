@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px) {
+	/* all */
+	html{
+		font-size: 100%;
+	}
+	body{
+		font-size:100%;
+		color:#444; 
+		font-family: "Verdana","Microsoft YaHei",微软雅黑,宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif
+	}
+	p{margin: 0;padding: 0;}
+	/* index */
+	.wanjie_banner_2{
+		float: none;
+		height: 15rem;
+		background-image: url(../images/banner.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 15rem;	
+	}
+	.wanjie_banner_2 img{
+		display: none;
+	}
+	.wanjie_page li{
+		width: 100%;
+	}
+	/* footer */
+	.wanjie_footer{
+		padding: .625rem;
+	}
+	.wanjie_footer_inner{
+		padding: 0;
+	}
+	.wanjie_footer_inner span{
+		display: block;
+		font-size: .9375rem;
+		line-height: 1.5rem;
+		text-align: center;
+		color: #999999;
+		margin-left: 0;
+	}
+	/* product_750 */
+	.SL750_main .img_1{
+		display: none;
+	}
+	.SL750_main .img_2{
+		width: 100%;
+		position: inherit;
+	}
+}
+@media screen and (max-width: 770px) {
+		/* about */
+	.wanjie_banner_3{
+		height: 15rem;
+		background-image: url(../images/about_01.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 15rem;
+	}
+	.wanjie_banner_3 img{
+		display: none;
+	}
+	.banner_text{
+		padding: .3125rem 0;	
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		width: 12rem;
+	}
+	.banner_text .inner_text{
+		font-size: .75rem;
+		line-height: 1rem;
+		padding: .3125rem .625rem;
+	}
+	.about_left, .about_right{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+	}
+	.about_left .about_img{
+		width: 100%;
+	}
+	.about_right .about_img{
+		width: 100%;
+	}
+	.about_left .about_text{
+		width: 100%;
+		padding: .625rem;
+		font-size: .8125rem;
+	}
+	.about_right .about_text{
+		width: 100%! important;
+		padding: .625rem;
+		font-size: .8125rem;
+	}
+	.about_text_img{
+		display: none;
+	}
+}
+@media screen and (min-width: 640px) {
+	/* all */
+	html{font-size: 150%}
+}
+/* index */
+#media{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.wanjie_page li{position: relative;}
+
+/*program*/
+@media screen and (max-width: 1234px) {
+	.record .item .words-wrap .con{
+		top: 0;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
