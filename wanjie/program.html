@@ -165,17 +165,26 @@
 		</div>
 	</div>
 	<div>
-		<div class="title">体育场</div>
-		<div class="record">
+		<div class="title pc">体育场</div>
+		<div class="record pc">
 			<img src="images/range_4.jpg">
+		</div>
+		<div class="mobile_title mobile">
+			<p>5万人以上体育场含标准足球场和田径跑道</p>
+			<p>照明解决方案</p>
+		</div>
+		<div class="record mobile">
+			<img src="images/mobile_pe1.jpg">
+			<img src="images/mobile_pe2.jpg">
 		</div>
 	</div>
 </div>
 <!-- mainwrap1 end-->
 <!-- mainwrap2 -->
 <div class="main main-2 dn">
-	<div>
-		<table class="contrast">
+	<div style="position:relative;">
+		<img src="images/complete.jpg" class="img_1">
+		<table class="contrast mobile">
 			<thead>
 				<tr class="t-head">
 					<th colspan="4">>大功率HID灯具与LED灯具对比分析</th>
@@ -254,7 +263,6 @@
 				<td></td>
 			</tr>
 		</table>
-		<img src="images/complete.jpg">
 	</div>
 </div>
 <!-- mainwrap2 end-->
@@ -322,6 +330,12 @@ $(document).ready(function() {
 			$('.img-wrap').eq(0).find('img').attr('src', 'images/mobile_program_1.jpg');
 			$('.img-wrap').eq(1).find('img').attr('src', 'images/mobile_program_2.jpg');
 			$('.img-wrap').eq(2).find('img').attr('src', 'images/mobile_program_3.jpg');
+			$('.img_1').attr('src', 'images/mobile_img_1.jpg');
+		} else {
+			$('.img-wrap').eq(0).find('img').attr('src', 'images/program_1.jpg');
+			$('.img-wrap').eq(1).find('img').attr('src', 'images/program_2.jpg');
+			$('.img-wrap').eq(2).find('img').attr('src', 'images/program_3.jpg');
+			$('.img_1').attr('src', 'images/complete.jpg');			
 		};
 		if (size <= 767) {
 			$('#wanjie_title').attr('id', 'wanjie_title_m');

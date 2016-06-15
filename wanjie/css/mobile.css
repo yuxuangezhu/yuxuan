@@ -202,4 +202,33 @@
 	.record .item .words-wrap .con-last{
 		display: inline-block! important;
 	}
+	.main-1 .mobile_title{
+		text-align: center;
+		background-color: #00609c;
+		color: #fff;
+		font-size: 1rem;
+		padding: .625rem 0;
+	}
+	.main-2{
+		position: relative;
+		background-color: #e5e9eb;
+		overflow: hidden;
+	}
+	.main-2 table{
+		margin-top: -70%;
+		position: static;
+	}
+	.contrast{
+		opacity: .8;
+	}
+	.contrast .t-head th{
+		padding-left: .625rem;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		font-weight: normal;
+	}
+	.contrast tr td{
+		font-size: .9375rem;
+		height: 2rem;
+	}
 }
