@@ -40,8 +40,13 @@
     </ul>
 </nav>
 <!-- 导航结束 -->
-<div class="wanjie_banner wanjie_banner_2">
-	<div class="wanjie_banner_box"></div>
+<div class="wanjie_banner_index">
+	<div class="wanjie_banner_box">
+		<div class="wanjie_banner_text">
+			<span class="wanjie_banner_text1">照亮您的世界</span>
+			<span class="wanjie_banner_text2">1500W LED 场地照明灯</span>
+		</div>
+	</div>
 </div>
 <div class="wanjie_page">
 	<ul>
@@ -101,12 +106,15 @@ $(document).ready(function() {
 			$('#wanjie_title').attr('id', 'wanjie_title_m');
 			$('.wanjie_button').css('display', 'block');
 			$('.wanjie_img').find('span').css('margin-top', '-38px')
-			$('.wanjie_banner_box').css('width', '100%')
+			$('.wanjie_banner_box').css('width', '500px')
+			$('.wanjie_banner_text').addClass('wanjie_banner_text_m').removeClass('wanjie_banner_text')
 		} else {
 			$('#wanjie_title_m').attr('id', 'wanjie_title');
 			$('.wanjie_button').css('display', 'none');
 			$('.wanjie_img').find('span').css('margin-top', '0px')
 			$('.wanjie_banner_box').css('width', '597px')
+			$('.wanjie_banner_text_m').addClass('wanjie_banner_text').removeClass('wanjie_banner_text_m')
+
 		}
 	}
 })

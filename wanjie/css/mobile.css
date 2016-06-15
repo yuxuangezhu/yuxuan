@@ -71,7 +71,7 @@
 	}
 	.banner_text .inner_text{
 		font-size: .75rem;
-		line-height: 1rem;
+		/*line-height: 0.5rem;*/
 		padding: .3125rem .625rem;
 	}
 	.about_left, .about_right{

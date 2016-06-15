@@ -18,24 +18,24 @@
 	<a class="navbar-brand wanjie_logo" href="./index.html"></a>
 	<span class="glyphicon glyphicon-align-justify wanjie_button" aria-hidden="true"></span>
     <ul class="nav nav-pills" id="wanjie_title">
-		<li><a href="./index.html">首页</a></li>
-		<li><a href="./about.html">关于</a></li>
+		<li><a href="./index.html">首页</a><em class="em1"></em></li>
+		<li><a href="./about.html">关于</a><em class="em2"></em></li>
 		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="./product.html">产品<span class="caret"></span></a>
+			<a class="dropdown-toggle" data-toggle="dropdown" href="./product.html">产品<span class="caret"></span></a><em class="em3"></em>
 			<ul class="dropdown-menu wanjie_dr">
 				<li><a href="./product.html">SL1500</a></li>
 				<li><a href="./product_750.html">SL750</a></li>
 			</ul>
 		</li>
 		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="./program.html">应用方案<span class="caret"></span></a>
+			<a class="dropdown-toggle" data-toggle="dropdown" href="./program.html">应用方案<span class="caret"></span></a><em class="em4"></em>
 			<ul class="dropdown-menu wanjie_dr">
 				<li><a href="./program.html?#anli">应用案例</a></li>
 				<li><a href="./program.html?1#fanwei">应用范围</a></li>
-				<li><a href="./program.html?2#hid">HID V.S. LED</a></li>
+				<li><a href="./program.html?2#hid" class="hid">HID V.S.LED</a></li>
 			</ul>
 		</li>
-		<li><a href="./call.html">联系我们</a></li>
+		<li><a href="./call.html">联系我们</a><em class="em5"></em></li>
     </ul>
 </nav>
 <!-- 导航结束 -->
@@ -74,11 +74,11 @@ $(document).ready(function() {
 		$('#wanjie_title_m').css('display', 'none');
 		lock = 1;
 	})
-	$('#wanjie_title a').on('mouseover', function() {
-		$(this).css('border-bottom', '1px solid #2F7096');
+	$('#wanjie_title li').on('mouseover', function() {
+		$(this).find('em').css('display', 'block');
 	})
 	$('#wanjie_title a').on('mouseout', function() {
-		$(this).css('border-bottom', '');
+		$('em').css('display', 'none');
 	})
 	$('.wanjie_img').on('mouseover', function() {
 		$(this).find('span').css('margin-top', '-38px')
