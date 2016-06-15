@@ -199,4 +199,7 @@
 		position: absolute;	
 		z-index: 100;
 	}
+	.record .item .words-wrap .con-last{
+		display: inline-block! important;
+	}
 }
