@@ -1,3 +1,16 @@
+@media screen and (max-width: 1085px) {
+	.about_right .about_text{
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.about_left .about_text{
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.about_text_3 .about_intext_1{
+		padding-top: 2px;
+	}
+}
 @media screen and (max-width: 767px) {
 	/* all */
 	html{
@@ -94,6 +107,7 @@
 		width: 100%! important;
 		padding: .625rem;
 		font-size: .8125rem;
+		line-height: .9375rem;
 	}
 	.about_text_img{
 		display: none;
@@ -112,6 +126,8 @@
 		-moz-transform: translateY(0);
 		-o-transform: translateY(0);
 		transform: translateY(0);
+		font-size: 12px;
+		line-height: 14px;
 	}
 }
 @media screen and (max-width: 769px) {
@@ -137,6 +153,7 @@
 		background-color: #fff;
 		color: #595757;
 		font-size: .9375rem;
+		line-height: 1.2rem;
 	}
 	.main-0 .record .item .words-wrap .con-3{
 		background-color: #00609c;
