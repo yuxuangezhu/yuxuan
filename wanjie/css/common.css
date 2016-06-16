@@ -15,6 +15,9 @@ body {
 	height: 60px;
 	padding: 10px;
 	margin-bottom: 0px;
+	position: fixed;
+    width: 100%;
+    z-index: 99999;
 }
 #wanjie_title {
 	float: right;
@@ -39,7 +42,7 @@ body {
 	display: none;
     border-bottom: 1px solid #2F7096;
     margin: 0 auto;
-    margin-top: -5px;
+    margin-top: -1px;
 }
 #wanjie_title>li>a:focus, #wanjie_title>li>a:hover {
     background-color: transparent;
@@ -55,15 +58,9 @@ body {
 .wanjie_banner {
 	width: 100%;
 	float: left;
+	margin-top: 60px;
 }
-.wanjie_banner_index {
-	width: 100%;
-	float: left;
-	background-image: url('./../images/banner.png');
-	height: 389px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+
 img {
 	width: 100%;
 }
@@ -98,6 +95,8 @@ li {
 	text-align: center;
     padding: 10px;
     line-height: 25px;
+    padding-top: 60px;
+    margin-bottom: -60px;
 }
 .pro_footer {
 	background-color: #e5e9eb;
@@ -178,6 +177,18 @@ img{
 	top: 21%;
 	left: 2.5%;
 }
+.wanjie_banner_index {
+	margin-top: 60px; 
+}
+@media screen and (min-width: 500px) {
+.wanjie_banner_index {
+	width: 100%;
+	float: left;
+	background-image: url('./../images/banner.png');
+	height: 389px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 .wanjie_banner_box {
 	background-image: url('./../images/banner_cover.png');
 	width: 597px;
@@ -186,8 +197,50 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
+
+}
+.wanjie_banner_text_m {
+    width: 286px;
+    height: 85px;
+    position: relative;
+    float: right;
+    right: 32px;
+    top: 145px;
+    /*border: 1px solid;*/
+    color: #fff;
+    text-align: right;
+}
+.wanjie_banner_text_m .wanjie_banner_text1 {
+	font-size: 37px;
+    letter-spacing: 3px;
+}
+.wanjie_banner_text_m .wanjie_banner_text2 {
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 500px) {
+.wanjie_banner_index {
+	width: 100%;
+	float: left;
+	background-image: url('./../images/banner.png');
+	height: 289px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.wanjie_banner_box {
+	background-image: url('./../images/banner_cover_m.png');
+	width: 100% !important;
+    height: 320px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.wanjie_banner_text_m {
+    display: none;
 }
 
+}
 .banner_text .inner_text{
 	font-size: 24px;
 	display: block;
@@ -292,9 +345,10 @@ img{
     overflow: hidden;
     width: 90px;
     position: relative;
+    font-size: 12px;
 }
 #wanjie_title_m .hid {
-	padding-left: 0px !important;
+	padding-left: 6px !important;
 }
 #wanjie_title_m>li>a:focus, #wanjie_title_m>li>a:hover {
     background-color: transparent;
@@ -477,19 +531,19 @@ p{margin: 0;padding: 0;}
 	padding: 1px 0;
 }
 .icon-1{
-	background-image: url(../images/icon_1.jpg);
+	background-image: url(../images/icon_1.png);
 }
 .icon-2{
-	background-image: url(../images/icon_2.jpg);
+	background-image: url(../images/icon_2.png);
 }
 .icon-3{
-	background-image: url(../images/icon_3.jpg);
+	background-image: url(../images/icon_3.png);
 }
 .icon-4{
-	background-image: url(../images/icon_4.jpg);
+	background-image: url(../images/icon_4.png);
 }
 .icon-5{
-	background-image: url(../images/icon_5.jpg);
+	background-image: url(../images/icon_5.png);
 }
 
 /*table*/
@@ -554,24 +608,7 @@ p{margin: 0;padding: 0;}
     color: #fff;
     text-align: right;
 }
-.wanjie_banner_text_m {
-    width: 286px;
-    height: 85px;
-    position: relative;
-    float: right;
-    right: 32px;
-    top: 145px;
-    /*border: 1px solid;*/
-    color: #fff;
-    text-align: right;
-}
-.wanjie_banner_text_m .wanjie_banner_text1 {
-	font-size: 37px;
-    letter-spacing: 3px;
-}
-.wanjie_banner_text_m .wanjie_banner_text2 {
-	font-size: 12px;
-}
+
 .wanjie_banner_text span {
 	display: block;
 }
