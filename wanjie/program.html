@@ -42,7 +42,7 @@
 </nav>
 <!-- 导航结束 -->
 <!-- subnav -->
-<div class="subnav">
+<div class="subnav" style="padding-top: 66px;">
 	<ul class="tabwrap">
 		<li class="tab active"><a href="./program.html?#anli"><span class="des">应用分析</span></a></li>
 		<li class="tab"><a href="./program.html?1#fanwei"><span class="round"></span><span class="des">应用范围</span></a></li>
@@ -334,14 +334,16 @@ $(document).ready(function() {
 		} else {
 			$('.img-wrap').eq(0).find('img').attr('src', 'images/program_1.jpg');
 			$('.img-wrap').eq(1).find('img').attr('src', 'images/program_2.jpg');
-			$('.img-wrap').eq(2).find('img').attr('src', 'images/program_3.jpg');
+			// $('.img-wrap').eq(2).find('img').attr('src', 'images/program_3.jpg');
 			$('.img_1').attr('src', 'images/complete.jpg');			
 		};
 		if (size <= 767) {
 			$('#wanjie_title').attr('id', 'wanjie_title_m');
 			$('.wanjie_button').css('display', 'block');
+			$('.pro_2').css('display', 'none');
 		} else {
 			$('#wanjie_title_m').attr('id', 'wanjie_title');
+			$('.pro_2').css('display', 'block');
 			$('.wanjie_button').css('display', 'none');
 		}
 	}

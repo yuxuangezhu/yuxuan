@@ -1,7 +1,7 @@
 @media screen and (max-width: 1085px) {
 	.about_right .about_text{
 		font-size: 12px;
-		line-height: 14px;
+		line-height: 18px;
 	}
 	.about_left .about_text{
 		font-size: 12px;
@@ -127,7 +127,7 @@
 		-o-transform: translateY(0);
 		transform: translateY(0);
 		font-size: 12px;
-		line-height: 14px;
+		line-height: 20px;
 	}
 }
 @media screen and (max-width: 769px) {
@@ -204,7 +204,7 @@
 	}
 	.main-1 .record .item .words-wrap .con-4{
 		width: 100%;
-		padding-left: 6.25rem;
+		/*padding-left: 6.25rem;*/
 	}
 	.record .item .words-wrap .pro_2{
 		height: 5rem;
