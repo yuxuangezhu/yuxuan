@@ -12,6 +12,57 @@
 <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+<style type="text/css">
+@media screen and (max-width: 767px) {
+	.p3_1 {
+		height: 0px;
+	}
+	.p3_box {
+		height: auto !important;
+	}
+	.icon_t, .icon_t5 {
+		width: 8%;
+	}
+}
+@media screen and (max-width: 1038px) {
+	.p3_1 {
+		height: 100px;
+	}
+	.p3_box {
+		height: 266px;
+	}
+}
+@media screen and (min-width: 1388px) {
+	.p3_1 {
+		height: 200px;
+	}
+	.record .item .words-wrap .bg-white {
+		background-color: #f0f0f0;
+		color: #000;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: auto !important;
+	}
+	.icon_t, .icon_t5 {
+		width: 8%;
+	}
+}
+@media screen and (min-width: 767px) {
+	.p3_1 .con-3 {
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+strong {
+	font-weight: 100;
+}
+</style>
 </head>
 <body>
 <!-- <div class="box"> -->
@@ -32,7 +83,7 @@
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="./program.html">应用方案<span class="caret"></span></a><em class="em4"></em>
 			<ul class="dropdown-menu wanjie_dr">
-				<li><a href="./program.html?#anli">应用案例</a></li>
+				<li><a href="./program.html?#anli">应用分析</a></li>
 				<li><a href="./program.html?1#fanwei">应用范围</a></li>
 				<li><a href="./program.html?2#hid" class="hid">HID V.S.LED</a></li>
 			</ul>
@@ -42,7 +93,7 @@
 </nav>
 <!-- 导航结束 -->
 <!-- subnav -->
-<div class="subnav" style="padding-top: 66px;">
+<div class="subnav">
 	<ul class="tabwrap">
 		<li class="tab active"><a href="./program.html?#anli"><span class="des">应用分析</span></a></li>
 		<li class="tab"><a href="./program.html?1#fanwei"><span class="round"></span><span class="des">应用范围</span></a></li>
@@ -55,8 +106,8 @@
 	<div class="title">Raymond James体育场应用案例</div>
 	<div class="record">
 		<div class="item">
-			<div class="img-wrap"><img src="images/program_1.jpg"></div>
-			<div class="words-wrap pc">
+			<div class="img-wrap"><img src="images/program_1.jpg" class="p1_img"></div>
+			<div class="words-wrap pc p1">
 				<p class="con con-1">
 					<span>美国职业橄榄球队坦帕港海盗队主场Raymond James Stadium采用的热启动HID光源寿命短，更换频繁，造成运营维护的极度不便。为了选用更好的光源体育场运营经理参观调研了多个体育场，针对已采用LED灯具的场，发现普遍存在照明非常不均匀，眩光严重等问题， 决定不能使用这样的LED照明技术。 特别是在美国的一次职业棒球比赛中，球在运动员身边落下，而运动员却因灯光刺眼没有看到球。 Raymond James体育场作为顶级赛场，必须要避免类似的照明失效问题。</span>
 					<br />
@@ -70,10 +121,10 @@
 			</div>
 		</div>
 		<div class="item item-2">
-			<div class="words-wrap pc">
+			<div class="words-wrap pc p2">
 				<p class="con con-2">因当时产品还处于研发阶段，我们决定用现有的工程样机来替代所有HID热启动灯具。Raymond James体育场最终只使用了12盏灯具就把整个体育场照亮，达到反恐照明要求，并且照度非常均匀，灯具使用数量比预计的减少一半。目前这些灯具已经在体育场无故障运营2000小时。 体育场工作人员可以远程开关、调光，并实时监控到灯具关键的运行数据，如功耗、运营时间、内部温度等。现在我们已经收到Raymond James体育场的正式邀请，采用Sportslight LED 1500 灯具来进行全场照明改造。 <p>
 			</div>
-			<div class="img-wrap"><img src="images/program_2.jpg"></div>
+			<div class="img-wrap"><img src="images/program_2.jpg" class="p2_img"></div>
 			<div class="words-wrap mobile">
 				<p class="con con-2">因当时产品还处于研发阶段，我们决定用现有的工程样机来替代所有HID热启动灯具。Raymond James体育场最终只使用了12盏灯具就把整个体育场照亮，达到反恐照明要求，并且照度非常均匀，灯具使用数量比预计的减少一半。目前这些灯具已经在体育场无故障运营2000小时。 体育场工作人员可以远程开关、调光，并实时监控到灯具关键的运行数据，如功耗、运营时间、内部温度等。现在我们已经收到Raymond James体育场的正式邀请，采用Sportslight LED 1500 灯具来进行全场照明改造。 <p>
 			</div>
@@ -101,52 +152,52 @@
 	<div class="title">机场 | 码头</div>
 	<div class="record">
 		<div class="item">
-			<div class="img-wrap"><img src="images/range_1.png"></div>
-			<div class="words-wrap">
-				<div class="bg-black">
+			<div class="img-wrap"><img src="images/range_1.png" class="p3_img"></div>
+			<div class="words-wrap p3_box">
+				<div class="bg-black p3_1">
 					<p class="con con-3">机场和码头作为关键设施，对照明有特殊性要求：基于场地安全性及功能性的考量，照明系统应具备投射距离远，长寿命、低维护，高显色性，可调光及智能化远程控制等功能，以提供优良的照明光环境，满足运营安全、视频监控和自动化作业的需要。 </p>
 				</div>
-				<div class="bg-white">
+				<div class="bg-white p3_2">
 					<p class="con con-3">
-						<strong class="con-title icon-1">运营更安全</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_1.png"></span><span class="icon">运营更安全</span></strong>
 						<span>一般HID灯泡因含水银等重金属，有爆炸风险且污染环境；SL1500 LED灯具安全环保，无爆炸风险。</span>
 						<br />
-						<strong class="con-title icon-2">投射距离远，高显色性</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_2.png"></span><span class="icon">投射距离远，高显色性</span></strong>
 						<span class="span_1">SL1500 是目前市场上最大功率的LED投光灯，可满足机场、码头高清晰图像识别、监控需求。</span>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<div class="words-wrap pc">
+			<div class="words-wrap pc p4">
 				<div class="pro_1">
 					<img src="images/pro_2.png">
 				</div>
 					<p class="con con-4 right" style="width: 69%">
-						<strong class="con-title icon-3">可调光：瞬时启动，无极调光</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_3.png"></span><span class="icon" style="margin-top: 3px;">可调光：瞬时启动，无极调光</span></strong>
 						<span>HID灯具启动慢、不能热启动，且无法调光。 SL1500 LED灯具完美的解决了这些问题，提高了用户的使用体验。</span>
-						<strong class="con-title icon-4">智能化远程控制</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_4.png"></span><span class="icon">智能化远程控制</span></strong>
 						<span>可远程控制照明系统，监测灯具的运行状态：工作温度、功耗等，并具备多重自我保护功能。</span>
 					<p>
 			</div>
-			<div class="img-wrap"><img src="images/range_2.jpg"></div>
+			<div class="img-wrap"><img src="images/range_2.jpg" class="p4_img"></div>
 			<div class="words-wrap mobile">
 				<div class="pro_2">
 					<img src="images/pro_2.png">
 				</div>
 					<p class="con con-4 right">
-						<strong class="con-title icon-3">可调光：瞬时启动，无极调光</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_3.png"></span><span class="icon" style="margin-top: 3px;">可调光：瞬时启动，无极调光</span></strong>
 						<span>HID灯具启动慢、不能热启动，且无法调光。 SL1500 LED灯具完美的解决了这些问题，提高了用户的使用体验。</span>
-						<strong class="con-title icon-4">智能化远程控制</strong>
+						<strong class="con-title"><span class="icon_t"><img src="./images/icon_4.png"></span><span class="icon">智能化远程控制</span></strong>
 						<span>可远程控制照明系统，监测灯具的运行状态：工作温度、功耗等，并具备多重自我保护功能。</span>
 					<p>
 			</div>
 		</div>
 		<div class="item">
-			<div class="img-wrap"><img src="images/range_3.jpg"></div>
-			<div class="words-wrap">
+			<div class="img-wrap"><img src="images/range_3.jpg" class="p5_img"></div>
+			<div class="words-wrap p5">
 				<p class="con con-3">
-					<strong class="con-title icon-5">长寿命、低运营和维护费用</strong>
+					<strong class="con-title"><span class="icon_t5"><img src="./images/icon_5.png"></span><span class="icon" style="margin-top: 16px;">长寿命、低运营和维护费用</span></strong>
 					<span>以美国迈阿密港为例：现有照明系统使用了1800套1500W HID灯， 推荐用900套SL1500 LED灯替代，照度可提升15%， 系统节能50%以上，每年可节省电费及维护费折合人民币约1300万元。</span>
 					<br />
 					<strong>每年节省电费：</strong>
@@ -293,6 +344,20 @@ $(document).ready(function() {
 		$('.tab').removeClass('active');
 		$($('.tab')[0]).addClass('active');
 	}
+	$('.tab').on('mouseover', function() {
+		$('.tab').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.tabwrap').on('mouseout', function() {
+		$('.tab').removeClass('active');
+		if (hash == '#fanwei') {
+			$($('.tab')[1]).addClass('active');
+		} else if (hash == '#hid') {
+			$($('.tab')[2]).addClass('active');
+		} else if (hash == '#anli') {
+			$($('.tab')[0]).addClass('active');
+		}
+	})
 	reSize();
 	var lock = 1;
 	$('.wanjie_button').on('click', function() {
@@ -321,8 +386,28 @@ $(document).ready(function() {
 		$(this).find('span').css('margin-top', '0px')
 	})
 	$(window).on('resize', function() {
+		setImg();
 		reSize();
 	})
+	setTimeout(function() {
+		setImg();
+	},1000);
+	function setImg() {
+		var size = $(window).width();
+		if (size > 770 && size < 1140) {
+			$('.p1_img').height($('.p1').outerHeight());
+			$('.p2_img').height($('.p2').outerHeight());
+			$('.p3_img').height($('.p3_box').outerHeight());
+			$('.p4_img').height($('.p4').outerHeight());
+			$('.p5_img').height($('.p5').outerHeight());
+		} else if (size > 1140){
+			$('.p1_img').removeAttr('style');
+			$('.p2_img').removeAttr('style');
+			$('.p3_img').removeAttr('style');
+			$('.p4_img').removeAttr('style');
+			$('.p5_img').removeAttr('style');
+		}
+	}
 	function reSize() {
 		var size = $(window).width();
 		console.log(size)
@@ -337,7 +422,7 @@ $(document).ready(function() {
 			// $('.img-wrap').eq(2).find('img').attr('src', 'images/program_3.jpg');
 			$('.img_1').attr('src', 'images/complete.jpg');			
 		};
-		if (size <= 767) {
+		if (size <= 769) {
 			$('#wanjie_title').attr('id', 'wanjie_title_m');
 			$('.wanjie_button').css('display', 'block');
 			$('.pro_2').css('display', 'none');

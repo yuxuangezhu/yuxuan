@@ -31,7 +31,7 @@
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="./program.html">应用方案<span class="caret"></span></a><em class="em4"></em>
 			<ul class="dropdown-menu wanjie_dr">
-				<li><a href="./program.html?#anli">应用案例</a></li>
+				<li><a href="./program.html?#anli">应用分析</a></li>
 				<li><a href="./program.html?1#fanwei">应用范围</a></li>
 				<li><a href="./program.html?2#hid" class="hid">HID V.S.LED</a></li>
 			</ul>
@@ -40,12 +40,13 @@
     </ul>
 </nav>
 <!-- 导航结束 -->
-<div class="pro_title" style="padding-top: 66px;">
-	<a href="./product.html" page="#SL1500">SL1500</a>
-	<span style="margin: 0 10px; font-size: 20px;">·</span>
-	<a href="" page="#SL750">SL750</a>
+<div class="subnav">
+	<ul class="tabwrap">
+		<li class="tab"><a href="./product.html"><span class="des">SL1500</span></a></li>
+		<li class="tab active"><a href="./product_750.html"><span class="round"></span><span class="des">SL750</span></a></li>
+	</ul>
 </div>
-<div class="SL750_main">
+<div class="SL750_main" style="padding-top: 124px;">
 	<img src="images/product_750.jpg" class="img_1">
 	<img src="images/SL750_param.jpg" class="img_2">
 </div>
@@ -59,7 +60,7 @@
 <!-- 页尾结束 -->
 <script type="text/javascript">
 $(document).ready(function() {
-	$('[page="#SL750"]').css('text-decoration', 'underline');
+	// $('[page="#SL750"]').css('text-decoration', 'underline');
 	reSize();
 	var lock = 1;
 	$('.wanjie_button').on('click', function() {
@@ -86,6 +87,14 @@ $(document).ready(function() {
 	})
 	$('.wanjie_img').on('mouseout', function() {
 		$(this).find('span').css('margin-top', '0px')
+	})
+	$('.tab').on('mouseover', function() {
+		$('.tab').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.tabwrap').on('mouseout', function() {
+		$('.tab').removeClass('active');
+		$($('.tab')[1]).addClass('active');
 	})
 	$(window).on('resize', function() {
 		reSize();

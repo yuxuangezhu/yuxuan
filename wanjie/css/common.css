@@ -121,7 +121,7 @@ li {
 	padding-right: 10px;
 }
 .about_right .about_text {
-	width: 75%;
+	width: 82%;
 	padding-left: 10px;
 }
 .box {
@@ -143,6 +143,9 @@ li {
 img{
 	display: block;	
 }
+.main {
+	padding-top: 120px;  
+}
 .SL750_main{
 	position: relative;
 }
@@ -157,6 +160,7 @@ img{
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	padding-top: 100px;
 }
 /* about */
 .about_right .about_text{
@@ -198,7 +202,7 @@ img{
     height: 85px;
     position: relative;
     float: right;
-    right: 32px;
+    right: 28px;
     top: 145px;
     /*border: 1px solid;*/
     color: #fff;
@@ -260,10 +264,11 @@ img{
 	font-size: 12px;
 	font-family: "Microsoft YaHei";
 	line-height: 30px;
+	/*padding: 55px !important;*/
 }
 .about_text_1{
 	color: #999999;
-	width: 50%! important;
+	width: 50% !important;
 }
 .about_text_img{
 	position: absolute;
@@ -281,10 +286,12 @@ img{
 	display: block;
 }
 .about_text_3 .about_intext_2{
-	text-align: right;
+	text-align: left;
 }
 .about_text_3 .about_intext_1{
-	padding-top: 50px;
+	font-weight: 900;
+	color: #00609c;
+	font-size: 15px;
 }
 
 .call_content {
@@ -298,7 +305,7 @@ img{
 	background-image: url('./../images/call_02.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1000px;
+    background-size: 100%;
 }
 .call_img {
 	max-width: 450px;
@@ -352,8 +359,11 @@ img{
 	background-color: transparent;
 }
 
-
-
+.banner_text_m {
+    padding: 55px;
+    color: #fff;
+    background-color: #0a598c;
+}
 .navbar {
     border-radius: 0px;
 }
@@ -381,6 +391,13 @@ p{margin: 0;padding: 0;}
 .right{
 	float: right;
 }
+.subnav {
+	width: 100%;
+	position: fixed;
+    padding-top: 60px;
+    background-color: #fff;
+    z-index: 999;
+}
 .subnav .tabwrap{
 	padding: 16px 0;
 	width: 100%;
@@ -403,6 +420,7 @@ p{margin: 0;padding: 0;}
 	display: block;
 	border-bottom: 2px solid transparent;
 	color: #999999;
+	margin-left: 10px;
 }
 .subnav .tabwrap .active .des{
 	border-bottom: 2px solid #00609c;
@@ -432,7 +450,7 @@ p{margin: 0;padding: 0;}
 .record .item{
 	overflow: hidden;
 	display: table;
-	background-color: #E6E6E6;
+	background-color: #f0f0f0;
 }
 .record .item-2{
 	background-color: #000;
@@ -445,7 +463,7 @@ p{margin: 0;padding: 0;}
 }
 .record .item .words-wrap{
 	position: relative;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 .record .item .words-wrap .con{
 	width: 94%;
@@ -453,19 +471,17 @@ p{margin: 0;padding: 0;}
 	text-align: justify;
 	text-justify:inter-ideograph;
 	font-family: "Microsoft YaHei";
-	font-size: 16px;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
+	font-size: 13px;
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: translateY(-50%);*/
 	color: #595757;
 }
-.record .item .words-wrap .con-1{
-	color: #66609c;
-}
+
 .record .item .words-wrap .con-2{
 	color: #fff;
 }
@@ -483,12 +499,12 @@ p{margin: 0;padding: 0;}
 .record .item .words-wrap .bg-black{
 	position: absolute;
 	width: 100%;
-	height: 35%;
+	/*height: 35%;*/
 	background-color: #000;
-	overflow: auto;
+	/*overflow: auto;*/
 	top: 0;
 	left: 0;
-	height: 8vw;
+	/*height: 8vw;*/
 }
 .record .item .words-wrap .bg-black .con-3{
 	color: #fff;
@@ -498,15 +514,15 @@ p{margin: 0;padding: 0;}
 	color: #000;
 	position: absolute;
 	width: 100%;
-	height: 65%;
-	height: 15vw;
-	overflow: auto;
+	/*height: 65%;
+	height: 15vw;*/
+	/*overflow: auto;*/
 	bottom: 0;
 	left: 0;
 }
 .record .item .words-wrap .con-title{
 	display: block;
-	padding: 8px 0 8px 50px;
+	/*padding: 8px 0 8px s0px;*/
 	font-size: 20px;
 	background-repeat: no-repeat;
 	color: #595757;
@@ -524,27 +540,36 @@ p{margin: 0;padding: 0;}
 	color: #fff;
 	padding: 1px 0;
 }
+.icon {
+    display: inline-block !important;
+    margin-top: 10px;
+    position: absolute;
+}
+.icon_t{
+	width: 10%;
+    display: inline-block !important;
+    margin-right: 10px;
+}
+.icon_t5{
+	width: 8%;
+    display: inline-block !important;
+    margin-right: 10px;
+}
 .icon-1{
-	background-image: url(../images/icon_1.png);
-	background-size: 46px 38px;
+	background-image: url('./../images/icon_1.png');
 }
 .icon-2{
-	background-image: url(../images/icon_2.png);
-	background-size: 46px 31px;
+	background-image: url('./../images/icon_2.png');
 }
 .icon-3{
-	background-image: url(../images/icon_3.png);
-	background-size: 40px 36px;
+	background-image: url('./../images/icon_3.png');
 }
 .icon-4{
-	background-image: url(../images/icon_4.png);
-	background-size: 40px 35px;
+	background-image: url('./../images/icon_4.png');
 }
 .icon-5{
-	background-image: url(../images/icon_5.png);
-	background-size: 46px 35px;
+	background-image: url('./../images/icon_5.png');
 }
-
 /*table*/
 .main-2 > div{
 	position: relative;
@@ -618,4 +643,8 @@ p{margin: 0;padding: 0;}
 .wanjie_banner_text .wanjie_banner_text2 {
 	font-size: 12px;
     letter-spacing: 3px;
+}
+
+.p3_1 {
+	height: 100px;
 }
